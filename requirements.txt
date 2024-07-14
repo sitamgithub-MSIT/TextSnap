@@ -1,0 +1,6 @@
+pillow
+einops
+supervision==0.22.0rc1
+spaces
+transformers
+timm
