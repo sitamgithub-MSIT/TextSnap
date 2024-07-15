@@ -1,6 +1,23 @@
 # TextSnap
 
+[Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) is an advanced vision foundation model developed by Microsoft, designed to handle a wide range of vision and vision-language tasks using a prompt-based approach. This model can interpret simple text prompts to perform tasks like captioning, object detection, and segmentation. Its sequence-to-sequence architecture enables outstanding performance in both zero-shot and fine-tuned settings, making it a highly competitive vision foundation model. This project utilizes Florence-2 to demonstrate robust OCR (Optical Character Recognition) capabilities, offering both text extraction and enhanced visualization of recognized text regions in images.
 
+## Project Structure
+
+The project is structured as follows:
+
+- `src\` : The source code directory that contains the main files for the project.
+
+  - `model.py`: The file that contains the Florence-2 vision foundation model for generating responses.
+  - `task.py`: The file that contains the code for adopting the model to the OCR task.
+  - `utils.py`: The file that contains the utility functions for the project.
+
+- `app.py`: The main file that contains the Gradio application for the OCR task.
+- `requirements.txt`: The file that contains the required dependencies for the project.
+- `LICENSE`: The license file for the project.
+- `README.md`: The README file that contains information about the project.
+- `assets`: The folder that contains the screenshots for working on the application.
+- `images`: The folder that contains the images for testing the application.
 
 ## Tech Stack
 
@@ -23,7 +40,7 @@ Now, open up your local host and you should see the web application running. For
 
 ## Usage
 
-
+The web application allows you to upload an image, and the OCR models will extract text from it, providing two main functionalities: text extraction and text visualization. Text extraction cleans and formats the extracted text, ensuring proper spacing between words and after punctuation marks. Text visualization draws bounding boxes around recognized text regions on the image, offering a clear and enhanced visual representation. This application can assist in document digitization, automated data entry, and improved accessibility for visually impaired individuals by recognizing text from images.
 
 ## Contributing
 
