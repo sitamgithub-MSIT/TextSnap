@@ -1,12 +1,12 @@
 # TextSnap
 
-[Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) is an advanced vision foundation model developed by Microsoft, designed to handle a wide range of vision and vision-language tasks using a prompt-based approach. This model can interpret simple text prompts to perform tasks like captioning, object detection, and segmentation. Its sequence-to-sequence architecture enables outstanding performance in both zero-shot and fine-tuned settings, making it a highly competitive vision foundation model. This project utilizes [Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) to demonstrate robust OCR (Optical Character Recognition) capabilities, offering both text extraction and enhanced visualization of recognized text regions in images.
+[Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) is an advanced vision foundation model developed by Microsoft, designed to handle a wide range of vision and vision-language tasks using a prompt-based approach. This model can interpret simple text prompts to perform tasks like captioning, object detection, and segmentation. Its sequence-to-sequence architecture enables outstanding performance in zero-shot and fine-tuned settings, making it a highly competitive vision foundation model. This project utilizes [Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) to demonstrate robust OCR (Optical Character Recognition) capabilities, offering both text extraction and enhanced visualization of recognized text regions in images.
 
 ## Project Structure
 
 The project is structured as follows:
 
-- `src\`: The source code directory that contains the main files for the project.
+- `src\`: The source code directory containing the project's main files.
 
   - `model.py`: The file that contains the Florence-2 vision foundation model for generating responses.
   - `task.py`: The file that contains the code for adapting the model to the OCR task.
