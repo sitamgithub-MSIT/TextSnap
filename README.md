@@ -10,7 +10,7 @@ The project is structured as follows:
 
   - `model.py`: The file that contains the Florence-2 vision foundation model for generating responses.
   - `task.py`: The file that contains the code for adapting the model to the OCR task.
-  - `utils.py`: The file that contains the utility functions for the project.
+  - `utils.py`: The file containing the project's utility functions.
 
 - `app.py`: The main file that contains the Gradio application for the OCR task.
 - `requirements.txt`: The file that contains the required dependencies for the project.
