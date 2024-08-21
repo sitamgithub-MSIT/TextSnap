@@ -1,6 +1,9 @@
 # Importing the requirements
+import warnings
+warnings.filterwarnings("ignore")
+
 import gradio as gr
-from src.task import ocr_task
+from src.app.task import ocr_task
 
 
 # Image input for the interface
@@ -15,7 +18,7 @@ examples = [
     ["images/ocr_image_1.jpg"],
     ["images/ocr_image_2.jpg"],
     ["images/ocr_image_3.jpg"],
-    ["images/ocr_image_4.png"],
+    ["images/ocr_image_4.png"]
 ]
 
 # Title, description, and article for the interface
@@ -30,10 +33,11 @@ interface = gr.Interface(
     inputs=[image],
     outputs=[ocr_image_output, ocr_text_output],
     examples=examples,
+    cache_examples="lazy",
     title=title,
     description=description,
     article=article,
-    theme="soft",
+    theme="Nymbo/Nymbo_Theme",
     allow_flagging="never",
 )
 interface.launch(debug=False)

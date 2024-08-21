@@ -1,6 +1,6 @@
 # TextSnap
 
-[Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) is an advanced vision foundation model developed by Microsoft, designed to handle a wide range of vision and vision-language tasks using a prompt-based approach. This model can interpret simple text prompts to perform functions like captioning, object detection, and segmentation. Its sequence-to-sequence architecture enables outstanding performance in zero-shot and fine-tuned settings, making it a highly competitive vision foundation model. This project utilizes [Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) to demonstrate robust OCR (Optical Character Recognition) capabilities, offering both text extraction and enhanced visualization of recognized text regions in images.
+[**Florence-2**](https://huggingface.co/microsoft/Florence-2-large-ft) is an advanced vision foundation model developed by Microsoft, designed to handle a wide range of vision and vision-language tasks using a prompt-based approach. This model can interpret simple text prompts to perform functions like captioning, object detection, and segmentation. Its sequence-to-sequence architecture enables outstanding performance in zero-shot and fine-tuned settings, making it a highly competitive vision foundation model. This project utilizes [**Florence-2**](https://huggingface.co/microsoft/Florence-2-large-ft) to demonstrate robust OCR (Optical Character Recognition) capabilities, offering both text extraction and enhanced visualization of recognized text regions in images.
 
 ## Project Structure
 
@@ -8,9 +8,17 @@ The project is structured as follows:
 
 - `src\`: The source code directory containing the project's main files.
 
-  - `model.py`: The file that contains the Florence-2 vision foundation model for generating responses.
-  - `task.py`: The file that contains the code for adapting the model to the OCR task.
-  - `utils.py`: The file containing the project's utility functions.
+  - `app\`: The folder that contains the source code for the main functionality of the application.
+
+    - `model.py`: The file that contains the Florence-2 vision foundation model for generating responses.
+    - `task.py`: The file that contains the code for adapting the model to the OCR task.
+
+  - `utils\`: The folder that contains the utility function for the project.
+
+    - `processing.py`: The file containing the project's utility functions regarding OCR tasks.
+
+  - `logger.py`: This file contains the logging configuration for the project.
+  - `exception.py`: This file contains the exception handling for the project.
 
 - `app.py`: The main file that contains the Gradio application for the OCR task.
 - `requirements.txt`: The file that contains the required dependencies for the project.
@@ -22,6 +30,8 @@ The project is structured as follows:
 ## Tech Stack
 
 - Python (for the programming language)
+- PyTorch (for the deep learning framework)
+- Supervision (for the easy-to-use utils for Computer Vision tasks)
 - Hugging Face Transformers Library (for the vision large language model)
 - Gradio (for the web application)
 - Hugging Face Spaces (for hosting the gradio application)
