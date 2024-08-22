@@ -8,16 +8,16 @@ The project is structured as follows:
 
 - `src\`: The source code directory containing the project's main files.
 
-  - `app\`: The folder that contains the source code for the main functionality of the application.
+  - `app\`: The folder containing the source code for the application's main functionality.
 
     - `model.py`: The file that contains the Florence-2 vision foundation model for generating responses.
     - `task.py`: The file that contains the code for adapting the model to the OCR task.
 
-  - `utils\`: The folder that contains the utility function for the project.
+  - `utils\`: The folder containing the project's utility function.
 
     - `processing.py`: The file containing the project's utility functions regarding OCR tasks.
 
-  - `logger.py`: This file contains the logging configuration for the project.
+  - `logger.py`: This file contains the project's logging configuration.
   - `exception.py`: This file contains the exception handling for the project.
 
 - `app.py`: The main file that contains the Gradio application for the OCR task.
