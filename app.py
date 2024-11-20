@@ -33,11 +33,12 @@ interface = gr.Interface(
     inputs=[image],
     outputs=[ocr_image_output, ocr_text_output],
     examples=examples,
-    cache_examples="lazy",
+    cache_examples=True,
+    cache_mode="lazy",
     title=title,
     description=description,
     article=article,
     theme="Nymbo/Nymbo_Theme",
-    allow_flagging="never",
+    flagging_mode="never",
 )
 interface.launch(debug=False)

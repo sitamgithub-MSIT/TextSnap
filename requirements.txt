@@ -1,8 +1,8 @@
 pillow
 einops
 spaces
-torch==2.3.1
+torch
 timm
 transformers
-supervision==0.22.0
+supervision==0.23.0
 gradio
