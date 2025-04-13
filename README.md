@@ -4,7 +4,7 @@
 
 Below is a screenshot of the application in action:
 
-![TextSnap](assets\demo2.png)
+![TextSnap](assets/demo2.png)
 
 ## Project Structure
 
