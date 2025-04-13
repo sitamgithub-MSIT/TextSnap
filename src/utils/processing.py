@@ -79,7 +79,7 @@ def draw_ocr_bboxes(image: Image.Image, detections: sv.Detections) -> Image.Imag
         text_scale = sv.calculate_optimal_text_scale(resolution_wh=image.size)
 
         # Initialize the bounding box and label annotators
-        bounding_box_annotator = sv.BoundingBoxAnnotator(
+        bounding_box_annotator = sv.BoxAnnotator(
             color_lookup=sv.ColorLookup.INDEX, thickness=thickness
         )
         label_annotator = sv.LabelAnnotator(
