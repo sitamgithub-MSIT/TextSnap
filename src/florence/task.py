@@ -7,7 +7,7 @@ import supervision as sv
 
 # Local imports
 from src.utils.processing import clean_text, draw_ocr_bboxes
-from src.app.model import run_example
+from src.florence.model import run_example
 from src.logger import logging
 from src.exception import CustomExceptionHandling
 

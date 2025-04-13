@@ -3,7 +3,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 import gradio as gr
-from src.app.task import ocr_task
+from src.florence.task import ocr_task
 
 
 # Image input for the interface
