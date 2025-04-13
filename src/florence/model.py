@@ -3,9 +3,10 @@ import sys
 import subprocess
 from typing import Optional
 from PIL import Image
-import gradio as gr
-import spaces
+import torch
 from transformers import AutoProcessor, AutoModelForCausalLM
+import spaces
+import gradio as gr
 
 # Local imports
 from src.logger import logging
@@ -23,7 +24,7 @@ subprocess.run(
 model_id = "microsoft/Florence-2-large-ft"
 try:
     model = (
-        AutoModelForCausalLM.from_pretrained(model_id, trust_remote_code=True)
+        AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16, trust_remote_code=True)
         .to("cuda")
         .eval()
     )
@@ -60,7 +61,7 @@ def run_example(
         prompt = task_prompt if text_input is None else task_prompt + text_input
 
         # Process the image and text input
-        inputs = processor(text=prompt, images=image, return_tensors="pt").to("cuda")
+        inputs = processor(text=prompt, images=image, return_tensors="pt").to("cuda", torch.float16)
 
         # Generate the answer using the model
         generated_ids = model.generate(
